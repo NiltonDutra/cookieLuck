@@ -24,16 +24,18 @@ height: 100vh;
 
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+@keyframes message {
+  0% {
+    transform: translateY(-10rem);
+    scale: 0;
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translateY(0);
+    scale: 100%;
+    opacity: 1;
+  }
 }
 
 
@@ -94,26 +96,6 @@ cursor: pointer;
 
 /* screen2 */
 
-@keyframes tremor {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(2deg);
-    }
-    40% {
-      transform: rotate(-1deg);
-    }
-    60% {
-      transform: rotate(2deg);
-    }
-    80% {
-      transform: rotate(-1deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
 
 h2 {
 
@@ -136,6 +118,7 @@ font-weight: 400;
 padding: 1rem;
 background: #E4EDF1;
 box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+max-width: 20rem ;
 
 }
 
